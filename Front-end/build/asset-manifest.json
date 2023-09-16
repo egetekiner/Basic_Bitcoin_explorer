@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/horizon-ui-chakra/static/css/main.491f59c2.css",
+    "main.js": "/horizon-ui-chakra/static/js/main.6a32f53d.js",
+    "static/media/euro.png": "/horizon-ui-chakra/static/media/euro.33a91342c6253bb39f25.png",
+    "index.html": "/horizon-ui-chakra/index.html",
+    "main.491f59c2.css.map": "/horizon-ui-chakra/static/css/main.491f59c2.css.map",
+    "main.6a32f53d.js.map": "/horizon-ui-chakra/static/js/main.6a32f53d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.491f59c2.css",
+    "static/js/main.6a32f53d.js"
+  ]
+}
