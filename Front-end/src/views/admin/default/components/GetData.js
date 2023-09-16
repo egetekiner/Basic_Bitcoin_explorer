@@ -19,12 +19,10 @@ class BlockchainDataInstance {
     this.fetchPricingData();
     this.fetchStatsData();
     this.fetchPoolData();
-    this.fetchTradeVolumeData1Year();
 
     setInterval(() => this.fetchPricingData(), 60 * 60 * 1000); // Update every 1 hour
     setInterval(() => this.fetchStatsData(), 24 * 60 * 60 * 1000); // Update every 24 hours
     setInterval(() => this.fetchPoolData(), 24 * 60 * 60 * 1000); // Update every 24 hours
-    setInterval(() => this.fetchTradeVolumeData1Year(), 24 * 60 * 60 * 1000); // Update every 24 hours
   }
 
 
@@ -76,20 +74,6 @@ class BlockchainDataInstance {
       this.notify();
     } catch (error) {
       console.error("Failed to fetch pool data:", error);
-    }
-    
-  }
-
-  async fetchTradeVolumeData1Year() {
-    try {
-      const response = await axios.get('http://localhost:8000/trade_volume');
-      this.TradeVolume = response.data;
-      //console.log('data successfully parsed: Volume', response.data)
-      this.notify();
-    } catch (error) {
-      console.error("Failed to fetch Trade Volume data:", error);
-      console.error("Error Details:", error.response.data, error.response.status, error.response.headers);
-
     }
     
   }
